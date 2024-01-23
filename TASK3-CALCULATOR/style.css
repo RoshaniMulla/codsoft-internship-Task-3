@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containers{
+    position: relative;
+    width:350px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.89);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 35px;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid rgb(22,154,241);
+    box-shadow: 1px 1px 20px rgba(0,0,0, 0.486);
+    perspective: 800px;
+    user-select: none;
+    transform: translateZ(50px);
+}
+.containers input{
+    outline: none;
+    pointer-events: none;
+    border: 1px solid rgb(75, 75, 75);
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    margin-bottom:40px;
+    padding: 0 5px;
+}
+.containers .buttons{
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill,56px);
+}
+.containers .buttons button{
+    height: 40px;
+    width: 63px;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    outline: none;
+    /*border-radius: 50%;*/
+}
+.containers .buttons .number{
+    background-color: rgb(5, 69, 141);
+}
+.containers .buttons .operator{
+    background-color: rgb(5, 141, 134);
+    font-size: 30px;
+}
+.containers .buttons .egal{
+    background-color: rgb(226, 38, 5);
+    width: 133px;
+    font-size: 30px;
+}
+
+
+
